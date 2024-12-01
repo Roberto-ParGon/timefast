@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "c4b22939-36c9-4e0c-ba7d-75bdd54c05e4",
+		"name": "timefast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27776298"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "obtenerClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/obtenerCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"obtenerCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerClientePorNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/obtenerClientePorNombre/Juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"obtenerClientePorNombre",
+								"Juan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/eliminarCliente?correo=juanito.perez@email.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"eliminarCliente"
+							],
+							"query": [
+								{
+									"key": "correo",
+									"value": "juanito.perez@email.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"idCliente\": 5,\r\n        \"apellidoMaterno\": \"Gonza\",\r\n        \"apellidoPaterno\": \"Pele\",\r\n        \"calle\": \"Av. Mateos\",\r\n        \"codigoPostal\": \"91020\",\r\n        \"colonia\": \"Bodegón\",\r\n        \"correo\": \"juanito.perez@email.com\",\r\n        \"nombre\": \"Juanxo\",\r\n        \"numero\": 1021,\r\n        \"telefono\": \"5512345678\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/editarCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"editarCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerClienteCorreo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/obtenerClienteCorreo/juanito.perez@email.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"obtenerClienteCorreo",
+								"juanito.perez@email.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"apellidoMaterno\": \"Gonza\",\r\n        \"apellidoPaterno\": \"Pele\",\r\n        \"calle\": \"Av. Mateos\",\r\n        \"codigoPostal\": \"91020\",\r\n        \"colonia\": \"Bodegón\",\r\n        \"correo\": \"juanito.perez@email.com\",\r\n        \"nombre\": \"Juanito\",\r\n        \"numero\": 1021,\r\n        \"telefono\": \"5512345678\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/cliente/registrarCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"cliente",
+								"registrarCliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Envio",
+			"item": [
+				{
+					"name": "consultarEnvio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/envios/consultarEnvio?numGuia=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"envios",
+								"consultarEnvio"
+							],
+							"query": [
+								{
+									"key": "numGuia",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarEnvios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/envios/consultarEnvios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"envios",
+								"consultarEnvios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrarEnvio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"costo\": 100.00,\r\n        \"curp\": \"GUCJ920814HDFRZN07\",\r\n        \"idCliente\": 2,\r\n        \"idDestino\": 2,\r\n        \"idEnvio\": 2,\r\n        \"idEstatus\": 2,\r\n        \"idOrigen\": 2,\r\n        \"numGuia\": 14\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/envios/registrarEnvio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"envios",
+								"registrarEnvio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarEnvio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"costo\": 50.0,\r\n        \"idCliente\": 3, \r\n        \"idDestino\": 3,\r\n        \"idOrigen\": 3,\r\n        \"numGuia\": 14,\r\n        \"curp\": \"SOLM900622MDFNRD05\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeFast/WSRest/envios/actualizarEnvio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeFast",
+								"WSRest",
+								"envios",
+								"actualizarEnvio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
