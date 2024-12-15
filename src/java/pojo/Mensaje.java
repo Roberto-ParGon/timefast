@@ -1,7 +1,7 @@
 package pojo;
 
 public class Mensaje {
-    private boolean error;
+private boolean error;
 private String mensaje;
 
     public Mensaje() {

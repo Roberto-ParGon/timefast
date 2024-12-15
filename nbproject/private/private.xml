@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Blossom/Desktop/timeFast/src/java/ws/WSCliente.java</file>
-            <file>file:/C:/Users/Blossom/Desktop/timeFast/src/java/dominio/ImpCliente.java</file>
-            <file>file:/C:/Users/Blossom/Desktop/timeFast/src/java/dominio/ImpEnvio.java</file>
+            <file>file:/C:/Users/Blossom/Documents/NetBeansProjects/timeFast/src/java/mybatis/mappers/EnvioMapper.xml</file>
+            <file>file:/C:/Users/Blossom/Documents/NetBeansProjects/timeFast/src/java/ws/WSUnidad.java</file>
+            <file>file:/C:/Users/Blossom/Documents/NetBeansProjects/timeFast/src/java/pojo/Unidad.java</file>
+            <file>file:/C:/Users/Blossom/Documents/NetBeansProjects/timeFast/src/java/dominio/ImpEnvio.java</file>
         </group>
     </open-files>
 </project-private>

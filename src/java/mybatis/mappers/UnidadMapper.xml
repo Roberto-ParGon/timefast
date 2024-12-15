@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="unidad">
+
+    <insert id="registrarUnidad" parameterType="pojo.Unidad">
+        INSERT INTO unidad (vin, marca, modelo, anio, idTipoUnidad, numLicencia)
+        VALUES (#{vin}, #{marca}, #{modelo}, #{anio}, #{idTipoUnidad}, #{numLicencia})
+    </insert>
+    
+    <update id="editarUnidad" parameterType="pojo.Unidad">
+        UPDATE unidad
+        SET marca = #{marca},
+        modelo = #{modelo},
+        anio = #{anio},
+        idTipoUnidad = #{idTipoUnidad},
+        numLicencia = #{numLicencia}
+        WHERE vin = #{vin}
+    </update>
+    
+    <delete id="eliminarUnidad" parameterType="pojo.Unidad">
+        DELETE FROM unidad
+        WHERE vin = #{vin}
+    </delete>
+    
+    <select id="obtenerUnidadVin" resultType="pojo.Unidad">
+        SELECT * FROM unidad
+        WHERE vin = #{vin}
+    </select>
+
+    <select id="obtenerUnidadNii" resultType="pojo.Unidad">
+        <!--TODO-->
+    </select>      
+    
+    <select id="obtenerUnidadesMarca" resultType="pojo.Unidad">
+        SELECT * FROM unidad
+        WHERE marca = #{marca}
+    </select>     
+    
+    <select id="obtenerUnidades" resultType="pojo.Unidad">
+        SELECT * FROM unidad
+    </select>   
+
+</mapper>
